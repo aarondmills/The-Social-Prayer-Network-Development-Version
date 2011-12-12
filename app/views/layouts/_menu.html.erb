@@ -11,7 +11,7 @@
 		
 		<div id="navigation">			
 			<ul class="mainNav">
-				<li class="first"><%= link_to "Sign in with Twitter", "/auth/twitter" %></li>
+				<li class="first"><% if current_user %><%= link_to "Sign Out", signout_path %> <% else %><%= link_to "Sign in with Twitter", "/auth/twitter" %><% end %></li>
 				<li><a href="#">Freebies</a></li>
 				<li><a href="#">Startups</a></li>				
 				<li><a href="#">Web Design</a></li>
@@ -19,3 +19,6 @@
 				<li><a href="#">Programming</a></li>				
 			</ul>
 		</div><!--[END]#navigation-->
+
+
+  
