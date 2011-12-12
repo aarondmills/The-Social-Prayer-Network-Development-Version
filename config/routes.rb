@@ -11,6 +11,8 @@ Spn::Application.routes.draw do
   get "pages/privacy"
 
   get "pages/credits"
+
+	match "/auth/:provider/callback" => "sessions#create"
 	
 
   # The priority is based upon order of creation:

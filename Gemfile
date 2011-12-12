@@ -8,6 +8,11 @@ gem 'rails', '3.0.10'
 gem 'sqlite3'
 gem "jquery-rails"
 
+# These are the gems for the Omniauth Identity Install
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
+gem 'omniauth-google-oauth2'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
