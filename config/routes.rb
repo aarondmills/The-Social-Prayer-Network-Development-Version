@@ -2,9 +2,9 @@ Spn::Application.routes.draw do
 	
 	root :to => "pages#home"
 
-  match '/about' "pages/about"
+  match '/about', :to => "pages#about"
 
-  match '/contact' "pages/contact"
+  match '/contact', :to => "pages#contact"
 
   get "pages/terms"
 
