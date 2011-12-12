@@ -1,7 +1,10 @@
 Spn::Application.routes.draw do
-  get "pages/home"
+	
+	root :to => "pages#home"
 
-  get "pages/contact"
+  match '/about' "pages/about"
+
+  match '/contact' "pages/contact"
 
   get "pages/terms"
 
@@ -9,7 +12,6 @@ Spn::Application.routes.draw do
 
   get "pages/credits"
 	
-  get "pages/about"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

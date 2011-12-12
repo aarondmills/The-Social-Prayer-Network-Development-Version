@@ -1,21 +1,32 @@
-<!DOCTYPE html>
-<html>
-<head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">  
+<html xmlns="http://www.w3.org/1999/xhtml">  
+<head> 
   <title><%= title %></title>
-  <%= stylesheet_link_tag :all %>
-	<%= stylesheet_link_tag 'default', :media => 'screen' %>
-	<%= stylesheet_link_tag 'ie6Styles', :media => 'screen' %>	
-	<%= stylesheet_link_tag 'ie7', :media => 'screen' %>
-	<%= stylesheet_link_tag 'reset', :media => 'screen' %>
-	<%= stylesheet_link_tag 'styleBlack', :media => 'screen' %>
-	<%= stylesheet_link_tag 'styleBrown', :media => 'screen' %>
-	<%= stylesheet_link_tag 'typography', :media => 'screen' %>
-  <%= javascript_include_tag :defaults %>
-  <%= csrf_meta_tag %>
+	<%= render 'layouts/header' %>
 </head>
-<body>
+<body id="aboutPage">
+	<div id="wrapper">
+		<div id="header">	
+			<div id="logoWrapper">
+				<div class="logo"><a href="index.html"><span>Social Prayer Network</span></a></div>
+			</div>
+			<%= render 'layouts/menu' %>
+		
+		
+		
+			
+		
+		<div id="leftCol">
+			<%= yield %>	
+		</div><!--[END]#leftCol-->
 
-<%= yield %>
 
-</body>
-</html>
+				
+		<%= render 'layouts/right-column' %>
+
+
+
+		<div class="clear"></div>
+	</div><!--[END] #wrapper -->
+
+<%= render 'layouts/footer' %>
