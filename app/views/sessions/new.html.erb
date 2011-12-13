@@ -1,0 +1,12 @@
+<p>
+  <strong>Don&rsquo;t use these services?</strong>
+  <%= link_to "Create an account", "/auth/identity/register" %> or login below.
+</p>
+  
+<%= form_tag "/auth/identity/callback", :id=> "contactForm" do %>
+	<fieldset>
+    <%= label_tag :auth_key, "Email" %><%= text_field_tag :auth_key, nil, :class => "input" %>
+    <%= label_tag :password %><%= password_field_tag :password, nil, :class => "input" %><br /><br /><br /><br />
+ <%= submit_tag "Login", :class => "submit" %>
+</fieldset>
+<% end %>s

@@ -4,7 +4,7 @@
   <title><%= title %></title>
 	<%= render 'layouts/header' %>
 </head>
-<body id="aboutPage">
+<body id="contactPage">
 	<div id="wrapper">
 		<div id="header">	
 			<div id="logoWrapper">
@@ -17,6 +17,13 @@
 			
 		
 		<div id="leftCol">
+			<% if flash[:notice] %>
+				<div id="notice" class="infoMessage <% if flash[:error] %>error<% end %><% if flash[:notice] %>warning<% end %>"><%= flash[:notice] %></div><br /><br />
+				<script type="text/javascript">
+					setTimeout("new Effect.Fade('notice');", 15000)
+				</script>
+			<% end %>
+
 			<%= yield %>	
 		</div><!--[END]#leftCol-->
 

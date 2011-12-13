@@ -8,12 +8,17 @@ Spn::Application.routes.draw do
 
   get "pages/terms"
 
+	get "sessions/new"
+
   get "pages/privacy"
 
   get "pages/credits"
 
-	match "/auth/:provider/callback" => "sessions#create"
-	match "/signout" => "sessions#destroy", :as => :signout
+  match "/auth/:provider/callback", to: "sessions#create"
+  match "/auth/failure", to: "sessions#failure"
+  match "/signout", to: "sessions#destroy", :as => "signout"
+  resources :identities
+
 	
 
   # The priority is based upon order of creation:
