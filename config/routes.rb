@@ -8,7 +8,7 @@ Spn::Application.routes.draw do
 
   get "pages/terms"
 
-	get "sessions/new"
+	get "sessions/new", :as => "getstarted"
 
   get "pages/privacy"
 

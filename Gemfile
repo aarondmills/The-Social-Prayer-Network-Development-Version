@@ -14,6 +14,7 @@ gem 'omniauth-facebook'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-identity'
 gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'hominid'
 # Use unicorn as the web server
 # gem 'unicorn'
 

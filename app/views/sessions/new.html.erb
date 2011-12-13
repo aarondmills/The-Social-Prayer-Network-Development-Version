@@ -2,7 +2,7 @@
 <p><strong>You can login now with your <%= link_to "Twitter", "/auth/twitter" %> or <%= link_to "facebook", "/auth/facebook" %> account.</strong></p>
 <p>
   <strong>Don&rsquo;t use twitter or facebook?</strong>
-  <%= link_to "Create an account", "/auth/identity/register" %> or login below.
+  <%= link_to "Create an account", new_identity_path %> or login below.
 </p>
   
 <%= form_tag "/auth/identity/callback", :id=> "contactForm" do %>

@@ -1,7 +1,7 @@
 			<div id="topNav">
 				<ul class="topNavigation">
 					<li><%= link_to "HOME", root_path %></li>
-					<li><a href="blog.html">PRAY FOR OTHERS</a></li>
+					<li><% if current_user %><%= link_to "Sign Out", signout_path %> <% else %><%= link_to "LOGIN / REGISTER", getstarted_path %><% end %></li>
 					<li><a href="#">GET PRAYER</a></li>
 					<li><%= link_to "ABOUT US", about_path %></li>
 					<li><%= link_to "CONTACT US", contact_path %></li>
