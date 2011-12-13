@@ -58,9 +58,9 @@ img{}
 /* header */
 #header{min-height:150px;}
 .logo {float:left;}
-.logo a{display:block;width:332px;height:58px;background:url('../images/logo.jpg') no-repeat;margin-top:40px;}
+.logo a{display:block;width:332px;height:89px;background:url('../images/spn-logo.png') no-repeat;margin-top:40px;}
 .logo a span{margin-left:-9999px;}
-
+.invisible {margin-left:-9999px;display:none;}
 #topNav{float:right;height:44px;}
 #topNav li{display:block;float:left;margin-right:10px;font-size:11px;}
 #topNav li a{display:block;float:left;height:44px;line-height:50px;padding: 0 10px;}
