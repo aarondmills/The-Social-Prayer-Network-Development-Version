@@ -9,6 +9,10 @@ class User < ActiveRecord::Base
       user.uid = auth["uid"]
       user.name = auth["info"]["name"]
 			user.email = auth["info"]["email"]
+			user.city = auth["info"]["city"]
+			user.state = auth["info"]["state"]
+			user.country = auth["info"]["country"]
+			user.age = auth["info"]["age"]
     end
   end
 

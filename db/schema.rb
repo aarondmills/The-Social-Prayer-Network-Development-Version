@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111213171923) do
+ActiveRecord::Schema.define(:version => 20111213181601) do
 
   create_table "identities", :force => true do |t|
     t.string   "name"
@@ -19,6 +19,10 @@ ActiveRecord::Schema.define(:version => 20111213171923) do
     t.string   "password_digest"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "city"
+    t.string   "state"
+    t.string   "country"
+    t.integer  "age"
   end
 
   create_table "users", :force => true do |t|
