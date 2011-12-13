@@ -22,5 +22,10 @@ Spn::Application.configure do
 
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
+
+	FACEBOOKID = "338995739449267" 
+	FACEBOOKKEY = "0a0ba28884b56c07ad4c9874ea938ee7"
+	TWITTERID = "eGHmrjmD6b57Wy13ui6I6A"
+	TWITTERKEY = "KWnC5EX0DAbCPjpBMTNT1YQxWWBM6P6sz9a1BkoVM"
 end
 
