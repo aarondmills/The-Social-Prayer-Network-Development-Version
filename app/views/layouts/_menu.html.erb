@@ -1,7 +1,7 @@
 			<div id="topNav">
 				<ul class="topNavigation">
 					<li><%= link_to "HOME", root_path %></li>
-					<li><% if current_user %><%= link_to "Sign Out", signout_path %> <% else %><%= link_to "LOGIN / REGISTER", getstarted_path %><% end %></li>
+					<li><% if current_user %><%= link_to "SIGN OUT", signout_path %> <% else %><%= link_to "LOGIN / REGISTER", getstarted_path %><% end %></li>
 					<li><a href="#">GET PRAYER</a></li>
 					<li><%= link_to "ABOUT US", about_path %></li>
 					<li><%= link_to "CONTACT US", contact_path %></li>
@@ -11,7 +11,7 @@
 		
 		<div id="navigation">			
 			<ul class="mainNav">
-				<li class="first"><% if current_user %><%= link_to "Sign Out", signout_path %> <% else %><%= link_to "Sign in with Twitter", "/auth/twitter" %><% end %></li>
+				<li class="first"><% if current_user %><%= link_to "SIGN OUT", signout_path %> <% else %><%= link_to "Sign in with Twitter", "/auth/twitter" %><% end %></li>
 				<li><%= link_to "Create an account", "/auth/identity/register" %></li>
 				<li><%= link_to "login", "/auth/identity" %></li>				
 				<li><a href="#">Web Design</a></li>

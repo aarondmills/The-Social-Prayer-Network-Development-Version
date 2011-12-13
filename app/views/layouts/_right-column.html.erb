@@ -12,19 +12,20 @@
 			<!--[END}Search module -->
 			
 			<!--Twitter module -->
+			<% if current_user %>
 			<div class="module">
 				<div class="moduleTop"></div>
 				<div class="content">
-					<p class="title"><span>Twitter</span> Updates</p>
+					<p class="title"><span><%= current_user.name %></span> Profile</p>
 					<ul class="twitter">
-						<li><a href="#">Just twittering for good times</a>  2 mins ago</li>
-						<li><a href="#">Another fake twitter post, hurray</a> 1 hour ago</li>
-						<li><a href="#">Eating breakfast is fun.</a> 3 hours ago</li>
-						<li><a href="#">Some link to an amazing size http://tinyurl/234</a> 4 hours ago</li>
+						<li>Location: <%= current_user.city %> <%= current_user.state %></li>
+						<li><%= link_to "Sign Out", signout_path %></li>
 					</ul>
+					
 				</div>
 				<div class="moduleBottom"></div>				
 			</div>
+			<% end %>
 			<!--[END}Twitter module -->
 			
 			<!--Popular Posts -->
