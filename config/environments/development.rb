@@ -29,5 +29,7 @@ Spn::Application.configure do
 	TWITTERKEY = "KWnC5EX0DAbCPjpBMTNT1YQxWWBM6P6sz9a1BkoVM"
 	MAILCHIMP_API_KEY = "323e2375482cbe3490669fc180f270ca-us1"
 	MAILCHIMP_LIST_NAME = "Social Prayer Network"
+
+	
 end
 
